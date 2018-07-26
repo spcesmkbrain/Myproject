@@ -1,0 +1,141 @@
+@(bi1:Bike, bi2:Bike,bi3: Bike,bi4:Bike,bi5:Bike,bi6:Bike)
+
+<html>
+    <head>
+
+        <title>Bike stock</title>
+        <link type="text/css" rel="stylesheet"
+        href="/assets/stylesheets/bootstrap337/css/bootstrap.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <style>
+
+    .header{
+        background-image: url("/assets/images/BGLOGO.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100%;
+        text-shadow: 10px 10px 10px #000000;
+
+
+
+    }
+    H1{
+        color: white;
+    }
+    body{
+        background-image: url("/assets/images/background.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+    }
+    nav{
+        width: 100%;
+        height: 50px;
+        background-color: rgba(0,0,0,0.8);
+    }
+    footer{
+        font-size: 18px;
+        color: #ffffff;
+        text-align: center;
+        width: 100%;
+    }
+
+
+    </style>
+    <body>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="header">
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <img src="/assets/images/Logo.png" width="200px" height="200px">
+                        </div>
+                        <div class="bgheader" style="background-color: rgba(255,255,255,0.2)"; >
+                            <br><br><br><br><br><H1>TREK Bike</H1> <br><br>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="headbar">
+                    <div class="row">
+                        <nav>
+
+                        </nav>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2 col-xs-6 col-lg-3" style="background-color: #9acfea" >
+                        <div class="list-group">
+                            <a href="/" class="list-group-item">Home</a>
+                            <a href="/product" class="list-group-item">Product</a>
+                            <a href="/promotion" class="list-group-item">Promotion</a>
+                            <a href="/bikes" class="list-group-item active">Bike</a>
+
+                        </div>
+                    </div>
+                    <div class="col-md-10 col-xs-6 col-lg-9" style="height: 100%">
+                        <div class="container">
+                            <h2>Bike Stocks</h2>
+                            <p>Check Bike stocks and prices</p>
+                            <table class="table table-hover">
+                                <tbody>
+                                    <tr>
+                                        <td><img src="/assets/images/Roscoe6.jpg"style="width: 100%" ><br>
+                                            <b>รหัสสินค้า :</b>@bi1.getId<br>
+                                            <b>ชื่อสินค้า :</b>@bi1.getName<br>
+                                            <b>แบรนด์สินค้า :</b>@bi1.getBrands<br>
+                                            <b>ราคา :</b>@bi1.getPrices<br>
+                                            <b>จำนวณ :</b>@bi1.getAmounts</td>
+                                        <td><img src="/assets/images/Roscoe7W.jpg"style="width: 100%" ><br>
+                                            <b>รหัสสินค้า :</b>@bi2.getId<br>
+                                            <b>ชื่อสินค้า :</b>@bi2.getName<br>
+                                            <b>แบรนด์สินค้า :</b>@bi2.getBrands<br>
+                                            <b>ราคา :</b>@bi2.getPrices<br>
+                                            <b>จำนวณ :</b>@bi2.getAmounts</td>
+                                        <td><img src="/assets/images/ROSCOE8W.jpg"style="width: 100%" ><br>
+                                            <b>รหัสสินค้า :</b>@bi3.getId<br>
+                                            <b>ชื่อสินค้า :</b>@bi3.getName<br>
+                                            <b>แบรนด์สินค้า :</b>@bi3.getBrands<br>
+                                            <b>ราคา :</b>@bi3.getPrices<br>
+                                            <b>จำนวณ :</b>@bi3.getAmounts</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="/assets/images/Stache5.jpg"style="width: 100%" ><br>
+                                            <b>รหัสสินค้า :</b>@bi4.getId<br>
+                                            <b>ชื่อสินค้า :</b>@bi4.getName<br>
+                                            <b>แบรนด์สินค้า :</b>@bi4.getBrands<br>
+                                            <b>ราคา :</b>@bi4.getPrices<br>
+                                            <b>จำนวณ :</b>@bi4.getAmounts</td>
+                                        <td><img src="/assets/images/Fuel_EX529.jpg"style="width: 100%" ><br>
+                                            <b>รหัสสินค้า :</b>@bi5.getId<br>
+                                            <b>ชื่อสินค้า :</b>@bi5.getName<br>
+                                            <b>แบรนด์สินค้า :</b>@bi5.getBrands<br>
+                                            <b>ราคา :</b>@bi5.getPrices<br>
+                                            <b>จำนวณ :</b>@bi5.getAmounts</td>
+                                        <td><img src="/assets/images/FuelEX829EAG.jpg"style="width: 100%" ><br>
+                                            <b>รหัสสินค้า :</b>@bi6.getId<br>
+                                            <b>ชื่อสินค้า :</b>@bi6.getName<br>
+                                            <b>แบรนด์สินค้า :</b>@bi6.getBrands<br>
+                                            <b>ราคา :</b>@bi6.getPrices<br>
+                                            <b>จำนวณ :</b>@bi6.getAmounts</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12" style="background-color:rgba(0,0,0,0.8)">
+                        <footer>footer</footer>
+                        <br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </body>
+</html>
